@@ -1,0 +1,107 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "cider",
+  "title": "Cider",
+  "description": "The official Raycast Cider extension, use this extension to control your playback including play/pause, shuffle, search for new songs, and more!",
+  "icon": "command-icon.png",
+  "author": "cryptofyre",
+  "categories": [
+    "Applications",
+    "Media"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "play",
+      "title": "Play",
+      "description": "Continues or starts playback from where you last left off.",
+      "mode": "view"
+    },
+    {
+      "name": "pause",
+      "title": "Pause",
+      "description": "Pauses playback where you last left off.",
+      "mode": "view"
+    },
+    {
+      "name": "search",
+      "title": "Search",
+      "description": "Search for a Song to play using MusicKit search functions.",
+      "mode": "view"
+    },
+    {
+      "name": "toggle-infinite",
+      "title": "Toggle Infinite",
+      "description": "Toggles the infinite queue in Cider",
+      "mode": "view"
+    },
+    {
+      "name": "skip",
+      "title": "Skip",
+      "description": "Skips the current song and plays the next one (if applicable) in the queue.",
+      "mode": "view"
+    },
+    {
+      "name": "back",
+      "title": "Back",
+      "description": "Returns to the previous played song.",
+      "mode": "view"
+    },
+    {
+      "name": "love",
+      "title": "Love",
+      "description": "Marks the current song as loved.",
+      "mode": "view"
+    },
+    {
+      "name": "add",
+      "title": "Add",
+      "description": "Adds the currently playing song to library.",
+      "mode": "view"
+    },
+    {
+      "name": "add-to-playlist",
+      "title": "Add To Playlist",
+      "description": "Adds the currently playing song to a playlist defined by the user.",
+      "mode": "view"
+    },
+    {
+      "name": "start-radio",
+      "title": "Start Radio",
+      "description": "Creates a radio station based on the currently playing song.",
+      "mode": "view"
+    },
+    {
+      "name": "show-album",
+      "title": "Show Album",
+      "description": "Prompts Cider to open and show the current album for the current song.",
+      "mode": "view"
+    },
+    {
+      "name": "dislike",
+      "title": "Dislike",
+      "description": "Marks the current song as disliked.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.45.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
