@@ -4,7 +4,7 @@
   "title": "Cider",
   "description": "The official Raycast Cider extension, use this extension to control your playback including play/pause, shuffle, search for new songs, and more!",
   "icon": "command-icon.png",
-  "author": "cryptofyre",
+  "author": "Amaru",
   "categories": [
     "Applications",
     "Media"
@@ -15,77 +15,48 @@
       "name": "play",
       "title": "Play",
       "description": "Continues or starts playback from where you last left off.",
-      "mode": "view"
+      "mode": "no-view"
     },
     {
       "name": "pause",
       "title": "Pause",
       "description": "Pauses playback where you last left off.",
-      "mode": "view"
+      "mode": "no-view"
     },
     {
-      "name": "search",
-      "title": "Search",
-      "description": "Search for a Song to play using MusicKit search functions.",
-      "mode": "view"
+      "name": "stop",
+      "title": "Stop Playback",
+      "description": "Stops playback and resets the progress of the current track.",
+      "mode": "no-view"
     },
     {
-      "name": "toggle-infinite",
-      "title": "Toggle Infinite",
-      "description": "Toggles the infinite queue in Cider",
-      "mode": "view"
+      "name": "playpause",
+      "title": "Toggle Play/Pause",
+      "description": "Toggles between play and pause depending on the current state.",
+      "mode": "no-view"
     },
     {
-      "name": "skip",
-      "title": "Skip",
-      "description": "Skips the current song and plays the next one (if applicable) in the queue.",
-      "mode": "view"
+      "name": "next",
+      "title": "Next Track",
+      "description": "Plays the next track (if applicable) in the queue.",
+      "mode": "no-view",
+      "keywords": [
+        "skip"
+      ]
     },
     {
-      "name": "back",
-      "title": "Back",
-      "description": "Returns to the previous played song.",
-      "mode": "view"
-    },
-    {
-      "name": "love",
-      "title": "Love",
-      "description": "Marks the current song as loved.",
-      "mode": "view"
-    },
-    {
-      "name": "add",
-      "title": "Add",
-      "description": "Adds the currently playing song to library.",
-      "mode": "view"
-    },
-    {
-      "name": "add-to-playlist",
-      "title": "Add To Playlist",
-      "description": "Adds the currently playing song to a playlist defined by the user.",
-      "mode": "view"
-    },
-    {
-      "name": "start-radio",
-      "title": "Start Radio",
-      "description": "Creates a radio station based on the currently playing song.",
-      "mode": "view"
-    },
-    {
-      "name": "show-album",
-      "title": "Show Album",
-      "description": "Prompts Cider to open and show the current album for the current song.",
-      "mode": "view"
-    },
-    {
-      "name": "dislike",
-      "title": "Dislike",
-      "description": "Marks the current song as disliked.",
-      "mode": "view"
+      "name": "previous",
+      "title": "Previous Track",
+      "description": "Returns to the previous played track.",
+      "mode": "no-view",
+      "keywords": [
+        "back"
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.45.2"
+    "@raycast/api": "^1.45.2",
+    "node-fetch": "^3.3.1"
   },
   "devDependencies": {
     "@types/node": "18.8.3",

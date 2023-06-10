@@ -4,7 +4,7 @@ import { closeMainWindow, showToast, Toast } from "@raycast/api";
 export default async function main() {
   try {
     await closeMainWindow();
-    await fetch("http://localhost:10769/pause");
+    await fetch("http://localhost:10769/previous");
   } catch (error) {
     console.error(error);
     showToast({
