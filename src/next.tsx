@@ -3,8 +3,8 @@ import { closeMainWindow, showToast, Toast } from "@raycast/api";
 
 export default async function main() {
   try {
-    await closeMainWindow({ clearRootSearch: true });
     await fetch("http://localhost:10769/next");
+    await closeMainWindow({ clearRootSearch: true });
   } catch (error) {
     console.error(error);
     showToast({
