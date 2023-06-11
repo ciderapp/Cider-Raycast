@@ -3,7 +3,7 @@ import { closeMainWindow, showToast, Toast } from "@raycast/api";
 
 export default async function main() {
   try {
-    await closeMainWindow();
+    await closeMainWindow({ clearRootSearch: true });
     await fetch("http://localhost:10769/pause");
   } catch (error) {
     console.error(error);
