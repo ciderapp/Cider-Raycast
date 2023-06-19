@@ -27,6 +27,8 @@ declare namespace Preferences {
   export type Previous = ExtensionPreferences & {}
   /** Preferences accessible in the `toggle-autoplay` command */
   export type ToggleAutoplay = ExtensionPreferences & {}
+  /** Preferences accessible in the `add-to-library` command */
+  export type AddToLibrary = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
@@ -44,4 +46,6 @@ declare namespace Arguments {
   export type Previous = {}
   /** Arguments passed to the `toggle-autoplay` command */
   export type ToggleAutoplay = {}
+  /** Arguments passed to the `add-to-library` command */
+  export type AddToLibrary = {}
 }

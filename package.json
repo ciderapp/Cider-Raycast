@@ -57,7 +57,13 @@
       "name": "toggle-autoplay",
       "title": "Toggle Autoplay",
       "description": "Toggles the Autoplay setting in Cider.",
-      "mode": "view"
+      "mode": "no-view"
+    },
+    {
+      "name": "add-to-library",
+      "title": "Add to Library",
+      "description": "Adds the currently playing song to library.",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
