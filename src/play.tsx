@@ -4,7 +4,6 @@ import { closeMainWindow, showToast, Toast } from "@raycast/api";
 export default async function main() {
   try {
     await fetch("http://localhost:10769/play");
-    await closeMainWindow({ clearRootSearch: true });
   } catch (error) {
     console.error(error);
     showToast({
@@ -12,5 +11,7 @@ export default async function main() {
       title: "Error",
       message: "Failed to connect to Cider",
     });
+    return;
   }
+  await closeMainWindow({ clearRootSearch: true });
 }
