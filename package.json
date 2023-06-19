@@ -4,7 +4,7 @@
   "title": "Cider",
   "description": "The official Raycast Cider extension, use this extension to control your playback including play/pause, shuffle, search for new songs, and more!",
   "icon": "command-icon.png",
-  "author": "Amaru",
+  "author": "cidercollective",
   "categories": [
     "Applications",
     "Media"
@@ -67,7 +67,7 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.45.2",
+    "@raycast/api": "^1.53.4",
     "node-fetch": "^3.3.1"
   },
   "devDependencies": {
