@@ -1,3 +1,3 @@
 # Cider Changelog
 
-## [Initial Version] - 2023-01-04
+## [Initial Version] - 2023-06-19
