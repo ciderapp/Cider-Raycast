@@ -52,6 +52,12 @@
       "keywords": [
         "back"
       ]
+    },
+    {
+      "name": "toggle-autoplay",
+      "title": "Toggle Autoplay",
+      "description": "Toggles the Autoplay setting in Cider.",
+      "mode": "view"
     }
   ],
   "dependencies": {
