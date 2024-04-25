@@ -24,12 +24,6 @@
       "mode": "no-view"
     },
     {
-      "name": "stop",
-      "title": "Stop Playback",
-      "description": "Stops playback and resets the progress of the current track.",
-      "mode": "no-view"
-    },
-    {
       "name": "playpause",
       "title": "Toggle Play/Pause",
       "description": "Toggles between play and pause depending on the current state.",
@@ -58,26 +52,21 @@
       "title": "Toggle Autoplay",
       "description": "Toggles the Autoplay setting in Cider.",
       "mode": "no-view"
-    },
-    {
-      "name": "add-to-library",
-      "title": "Add to Library",
-      "description": "Adds the currently playing song to library.",
-      "mode": "no-view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.53.4",
+    "@raycast/api": "^1.72.0",
     "node-fetch": "^3.3.1"
   },
   "devDependencies": {
-    "@types/node": "18.8.3",
-    "@types/react": "18.0.9",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.27",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1",
+    "react": "^18.2.0",
     "typescript": "^4.4.3"
   },
   "scripts": {

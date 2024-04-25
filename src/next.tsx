@@ -3,14 +3,21 @@ import { closeMainWindow, showToast, Toast } from "@raycast/api";
 
 export default async function main() {
   try {
-    await fetch("http://localhost:10769/next");
+    await fetch("http://127.0.0.1:10769/next");
   } catch (error) {
-    console.error(error);
-    showToast({
-      style: Toast.Style.Failure,
-      title: "Error",
-      message: "Failed to connect to Cider",
-    });
+    if ((error as Error).name === "FetchError") {
+      showToast({
+        style: Toast.Style.Failure,
+        title: "Error",
+        message: "Couldn't connect to Cider",
+      });
+    } else {
+      showToast({
+        style: Toast.Style.Failure,
+        title: "Error",
+        message: "An unknown error occurred",
+      });
+    }
     return;
   }
   await closeMainWindow({ clearRootSearch: true });

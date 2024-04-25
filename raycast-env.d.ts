@@ -17,8 +17,6 @@ declare namespace Preferences {
   export type Play = ExtensionPreferences & {}
   /** Preferences accessible in the `pause` command */
   export type Pause = ExtensionPreferences & {}
-  /** Preferences accessible in the `stop` command */
-  export type Stop = ExtensionPreferences & {}
   /** Preferences accessible in the `playpause` command */
   export type Playpause = ExtensionPreferences & {}
   /** Preferences accessible in the `next` command */
@@ -27,8 +25,6 @@ declare namespace Preferences {
   export type Previous = ExtensionPreferences & {}
   /** Preferences accessible in the `toggle-autoplay` command */
   export type ToggleAutoplay = ExtensionPreferences & {}
-  /** Preferences accessible in the `add-to-library` command */
-  export type AddToLibrary = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
@@ -36,8 +32,6 @@ declare namespace Arguments {
   export type Play = {}
   /** Arguments passed to the `pause` command */
   export type Pause = {}
-  /** Arguments passed to the `stop` command */
-  export type Stop = {}
   /** Arguments passed to the `playpause` command */
   export type Playpause = {}
   /** Arguments passed to the `next` command */
@@ -46,6 +40,5 @@ declare namespace Arguments {
   export type Previous = {}
   /** Arguments passed to the `toggle-autoplay` command */
   export type ToggleAutoplay = {}
-  /** Arguments passed to the `add-to-library` command */
-  export type AddToLibrary = {}
 }
+
